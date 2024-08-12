@@ -1,0 +1,20 @@
+button.btn-whats{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    background: none;
+    border: 2px solid #2cac36;
+    transition: 1s linear;
+    animation: show-buttom-whats 1s forwards;
+
+    img { width: 100%; height: 100%;}
+}
+button.actived {
+    animation: remove-buttom-whats 1s forwards;
+}
+button.animation {
+    animation: moviment-button 1s infinite linear;
+    transition: 1s linear;
+}

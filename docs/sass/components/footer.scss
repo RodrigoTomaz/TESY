@@ -1,0 +1,36 @@
+@import "../utilities/base/variables";
+
+footer{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+    border-top: 1px solid $color-white-2;
+    .footer-content{
+      width: 1440px;
+      padding: 30px 20px;
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-direction: column;
+  
+      .footer-item{
+        display: flex; 
+        flex-direction: column; 
+        gap: 20px;
+
+        h3 { margin: 0; }
+        .footer-link {
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px;
+            padding: 0;
+
+            a, p { color: $color-black; margin: 0; }
+
+        }
+      }
+    }
+}

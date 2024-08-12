@@ -1,0 +1,72 @@
+
+
+.position-fixed{
+    position: fixed;
+    transition: 1s linear;
+    top: 0;
+}
+.c-1{
+    grid-column: span 1;
+}
+.c-2{
+    grid-column: span 2;
+}
+.c-3{
+    grid-column: span 3;
+}
+.r-1{
+    grid-row: span 1;
+}
+.r-2{
+    grid-row: span 2;
+}
+.r-3{
+    grid-row: span 3;
+}
+
+.effect {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    position: relative;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+.show.top{ animation: animation-top 1s forwards;}
+.show.left{ animation: animation-left 1s forwards; }
+.show.bottom { animation: animation-bottom 1s forwards; }
+.show.right { animation: animation-right 1s forwards;}
+
+.show.delay-1{
+    animation-delay: 120ms;
+    transition-delay: 180ms;
+}
+.show.delay-2{
+    animation-delay: 180ms;
+    transition-delay: 380ms;
+}
+.show.delay-3{
+    animation-delay: 380ms;
+    transition-delay: 580ms;
+}
+
+@keyframes animation-top {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(0);}
+}
+@keyframes animation-left {
+    from { transform: translateX(-100px); }
+    to { transform: translateX(0);}
+}
+@keyframes animation-bottom {
+    from { transform: translateY(100px); }
+    to { transform: translateY(0);}
+}
+@keyframes animation-right {
+    from { transform: translateX(100px); }
+    to { transform: translateX(0);}
+}
