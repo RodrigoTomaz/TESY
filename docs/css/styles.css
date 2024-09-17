@@ -246,6 +246,8 @@ section#about {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 60px;
 }
 section#about .about-content {
   width: 1440px;

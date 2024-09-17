@@ -4,6 +4,8 @@ section#about{
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 60px;
 
     .about-content{
         width: 1440px;
