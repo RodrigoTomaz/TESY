@@ -18,4 +18,4 @@
 
 ## ✉ Fale Comigo
 
-Se tiver algum FeedBack, fale comigo rodpay6@gmail.com. Obrigado 😁!
+Se tiver algum FeedBack, fale comigo tomaz.souza2006@gmail.com Obrigado 😁!
