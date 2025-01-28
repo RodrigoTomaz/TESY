@@ -1,81 +1,85 @@
 @import "../utilities/base/variables";
 
 header {
-    width: 100%;
-    border-bottom: 1px solid $color-white-3;
-    box-shadow: 0px 3px 8px  $color-white-2;
+  width: 100%;
+  border-bottom: 1px solid $color-white-3;
+  box-shadow: 0px 3px 8px $color-white-2;
+  display: flex;
+  justify-content: center;
+  background-color: $color-white;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  .header-content {
+    width: 1440px;
     display: flex;
-    justify-content: center;
-    background-color: $color-white;
-    z-index: 9999;
-    position: fixed;
-    top: 0;
-    .header-content{
-        width: 1440px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
 
-        .btn-navbar { 
-            width: 50px; 
-            height: 50px; 
-            background-color: $color-white-3; 
-            border-radius: 1rem; 
-            align-items: center;
-            justify-content: center;
-            img { width: 75%; height: 75%; } 
-
-        }
-
-        ul.header-nav{ 
-            height: 100%;
-            margin: 0;
-            
-            li.header-item {
-                height: 100%;
-                
-                a {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    padding: 10px 20px;
-                    color: $color-black;
-                    transition: .8s ease-out;
-                    position: relative;
-
-                    &:hover {
-                        color: white;
-                        background-color: $color-white-2;
-                    }
-                    &:hover:after {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 2px;
-                        left: 0;
-                        bottom: 0;
-                        background-color: $color-white-3;
-                        
-                    }
-                }
-            }
-            li.header-buttom {
-                padding: 10px 20px;
-                .btn-sale { 
-                    padding: 10px 20px;
-                    border-radius: 1rem;
-                    background: none;
-                    border: 2px solid $color-white-3;
-                    transition: .5s linear;
-                    &:hover {
-                        background-color: $color-white-2;
-                        border: 2px solid $color-white-2;
-
-                        a{ color: $color-white; }
-                    }
-                    a {color: $color-black;} 
-                }
-            }
-        }
+    .btn-navbar {
+      width: 50px;
+      height: 50px;
+      background-color: $color-white-3;
+      border-radius: 1rem;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 75%;
+        height: 75%;
+      }
     }
+
+    ul.header-nav {
+      height: 100%;
+      margin: 0;
+
+      li.header-item {
+        height: 100%;
+        a {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding: 10px 20px;
+          color: $color-black;
+          transition: 0.8s ease-out;
+          position: relative;
+
+          &:hover {
+            color: white;
+            background-color: $color-white-2;
+          }
+          &:hover:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: $color-white-3;
+          }
+        }
+      }
+      li.header-buttom {
+        padding: 10px 20px;
+        .btn-sale {
+          padding: 10px 20px;
+          border-radius: 1rem;
+          background: none;
+          border: 2px solid $color-white-3;
+          transition: 0.5s linear;
+          &:hover {
+            background-color: $color-white-2;
+            border: 2px solid $color-white-2;
+
+            a {
+              color: $color-white;
+            }
+          }
+          a {
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
 }

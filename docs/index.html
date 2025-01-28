@@ -44,7 +44,10 @@
 
   <body>
     <header>
-      <div class="header-content p-0 ps-xl-3 pe-xl-3 flex-column flex-xl-row">
+      <div
+        id="top"
+        class="header-content p-0 ps-xl-3 pe-xl-3 flex-column flex-xl-row"
+      >
         <div
           class="header-wrapper d-flex align-items-center justify-content-between"
         >
@@ -57,7 +60,7 @@
         </div>
         <ul class="header-nav d-none d-xl-flex align-items-xl-center">
           <li class="header-item scrolled">
-            <a class="header-link" href="#home">Home</a>
+            <a class="header-link" href="#top">Home</a>
           </li>
           <li class="header-item scrolled">
             <a class="header-link" href="#apresentation">Apresentação</a>
@@ -91,9 +94,9 @@
           <h2><span></span> Quem sou eu?</h2>
           <div class="d-flex flex-column flex-lg-row">
             <p>
-              Quem é o Silas Yakov? Escritor, Teólogo, Filósofo, Terapeuta, Palestrante,
-              Juiz de Paz Internacional, Capelão, Casado, Pai e Avô,
-              Pós-graduando em Psicanálise, Vice-Presidente da Kehilah Beit
+              Quem é o Silas Yakov? Escritor, Teólogo, Filósofo, Terapeuta,
+              Palestrante, Juiz de Paz Internacional, Capelão, Casado, Pai e
+              Avô, Pós-graduando em Psicanálise, Vice-Presidente da Kehilah Beit
               Lechem, e Diretor SYC Consultoria. Minha missão é ser educador e
               transformador de vidas, por meio de palestras, aulas, treinamentos
               e processo de desenvolvimento humano terapêutico. Almejo
@@ -110,8 +113,20 @@
           </div>
         </div>
       </section>
-      <section id="home" class="effect right">
-        <div class="home-content"></div>
+      <section id="news" class="effect left d-flex justify-content-center">
+        <div class="news-content d-flex flex-column gap-3">
+          <h2><span></span>Novidades - Leia meu novo E-Book</h2>
+          <img src="assets/img/imgEbook.jpg" alt="E-Book image" />
+          <button class="btn-ebook">
+            <a href="https://chk.eduzz.com/6W4VA4Y30Z">Adquira já</a>
+          </button>
+        </div>
+      </section>
+      <section id="home" class="effect right d-flex justify-content-center">
+        <div class="home-content">
+          <h2><span></span>Livros</h2>
+          <div class="home-image"></div>
+        </div>
       </section>
       <section id="apresentation">
         <div class="apresentation-content">
@@ -382,9 +397,7 @@
                   <img src="assets/img/galleryphotos/image1.png" alt="" />
                 </a>
               </div>
-              <div
-                class="gallery-item c-3 effect bottom delay-1"
-              >
+              <div class="gallery-item c-3 effect bottom delay-1">
                 <a href="assets/img/galleryphotos/image2.png" class="thumbnail">
                   <img src="assets/img/galleryphotos/image2.png" alt="" />
                 </a>
@@ -428,152 +441,242 @@
                 </a>
               </div>
               <div class="gallery-item c-3 effect bottom delay-2">
-                <a href="assets/img/galleryphotos/image10.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image10.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image10.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-2 effect bottom delay-3">
-                <a href="assets/img/galleryphotos/image12.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image12.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image12.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 effect bottom delay-1">
-                <a href="assets/img/galleryphotos/image13.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image13.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image13.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-1 r-1 effect bottom">
-                <a href="assets/img/galleryphotos/image14.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image14.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image14.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-1 r-1 effect bottom delay-2">
-                <a href="assets/img/galleryphotos/image15.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image15.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image15.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-2 effect bottom delay-3">
-                <a href="assets/img/galleryphotos/image16.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image16.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image16.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 effect bottom delay-1">
-                <a href="assets/img/galleryphotos/image17.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image17.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image17.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-2 r-2 effect bottom">
-                <a href="assets/img/galleryphotos/image18.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image18.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image18.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-2 r-1 effect bottom delay-3">
-                <a href="assets/img/galleryphotos/image19.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image19.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image19.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-2 r-1 effect bottom delay-2">
-                <a href="assets/img/galleryphotos/image20.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image20.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image20.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-1 effect bottom delay-1">
-                <a href="assets/img/galleryphotos/image21.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image21.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image21.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-1 r-1 effect bottom delay-3">
-                <a href="assets/img/galleryphotos/image22.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image22.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image22.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-1 effect bottom delay-1">
-                <a href="assets/img/galleryphotos/image23.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image23.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image23.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-2 effect bottom">
-                <a href="assets/img/galleryphotos/image24.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image24.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image24.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-1 r-1 effect bottom delay-2">
-                <a href="assets/img/galleryphotos/image25.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image25.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image25.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-2 r-1 effect bottom delay-1">
-                <a href="assets/img/galleryphotos/image26.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image26.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image26.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-1 r-2 effect bottom delay-2">
-                <a href="assets/img/galleryphotos/image27.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image27.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image27.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-2 effect bottom">
-                <a href="assets/img/galleryphotos/image28.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image28.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image28.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-2 r-2 effect bottom delay-1">
-                <a href="assets/img/galleryphotos/image29.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image29.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image29.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-1 effect bottom delay-3">
-                <a href="assets/img/galleryphotos/image30.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image30.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image30.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-2 effect bottom delay-2">
-                <a href="assets/img/galleryphotos/image31.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image31.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image31.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-1 effect bottom">
-                <a href="assets/img/galleryphotos/image32.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image32.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image32.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-2 effect bottom delay-3">
-                <a href="assets/img/galleryphotos/image33.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image33.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image33.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-1 r-1 effect bottom delay-1">
-                <a href="assets/img/galleryphotos/image34.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image34.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image34.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-2 r-1 effect bottom">
-                <a href="assets/img/galleryphotos/image35.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image35.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image35.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-1 effect bottom delay-2">
-                <a href="assets/img/galleryphotos/image36.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image36.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image36.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-2 effect bottom delay-1">
-                <a href="assets/img/galleryphotos/image37.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image37.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image37.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-2 r-1 effect bottom delay-3">
-                <a href="assets/img/galleryphotos/image38.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image38.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image38.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-1 c-1 effect bottom">
-                <a href="assets/img/galleryphotos/image39.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image39.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image39.png" alt="" />
                 </a>
               </div>
               <div class="gallery-item c-3 r-1 effect bottom delay-3">
-                <a href="assets/img/galleryphotos/image40.png" class="thumbnail">
+                <a
+                  href="assets/img/galleryphotos/image40.png"
+                  class="thumbnail"
+                >
                   <img src="assets/img/galleryphotos/image40.png" alt="" />
                 </a>
               </div>

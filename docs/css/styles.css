@@ -9,9 +9,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -105,6 +107,59 @@ header .header-content ul.header-nav li.header-buttom .btn-sale a {
   color: #000;
 }
 
+#news {
+  width: 100%;
+  margin-top: 80px;
+}
+#news .news-content {
+  width: 1440px;
+  padding: 0 20px;
+}
+#news .news-content img {
+  width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#news .news-content h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 0 0 60px;
+}
+#news .news-content h2 span::before {
+  content: "";
+  width: 50px;
+  height: 10px;
+  background-color: #b3b3b3;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+#news .news-content .btn-ebook {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 1rem;
+  background: none;
+  border: 2px solid #6f6f6f;
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+#news .news-content .btn-ebook:hover {
+  background-color: #b3b3b3;
+  border: 2px solid #b3b3b3;
+}
+#news .news-content .btn-ebook:hover a {
+  color: #fff;
+}
+#news .news-content .btn-ebook a {
+  color: #000;
+}
+
 section#home {
   width: 100%;
   height: 100vh;
@@ -113,6 +168,29 @@ section#home {
   margin-bottom: 70px;
 }
 section#home .home-content {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section#home .home-content h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 0 0 60px;
+}
+section#home .home-content h2 span::before {
+  content: "";
+  width: 50px;
+  height: 10px;
+  background-color: #b3b3b3;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+section#home .home-content .home-image {
   width: 100%;
   height: 100%;
   background-image: url("../assets/img/imgbook.png");
@@ -482,6 +560,7 @@ footer .footer-content .footer-item .footer-link a, footer .footer-content .foot
     width: 100%;
     padding: 0;
     flex-direction: column;
+    overflow-y: auto;
   }
   .header-content .header-nav .header-item {
     height: 100%;
@@ -504,6 +583,9 @@ footer .footer-content .footer-item .footer-link a, footer .footer-content .foot
 @media screen and (max-width: 576px) {
   main section#home {
     margin: 0;
+  }
+  main section#news .news-content img {
+    width: 100%;
   }
   main section#presale {
     width: 100%;
@@ -545,6 +627,9 @@ footer .footer-content .footer-item .footer-link a, footer .footer-content .foot
   }
   main section#speeches .speeches-content .speeches-carousel {
     height: 300px !important;
+  }
+  main section#apresentation {
+    margin-top: 30px;
   }
 }
 @keyframes show-buttom-whats {
